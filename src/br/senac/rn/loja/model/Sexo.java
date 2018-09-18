@@ -1,12 +1,17 @@
 package br.senac.rn.loja.model;
 
-import java.util.Collections;
-
 public class Sexo implements Comparable<Sexo> {
 
+	private static Integer contador = 0;
+	
 	private Integer id;
 	private String nome;
 	private String sigla;
+	
+	public Sexo() {
+		Sexo.contador++;
+		id = Sexo.contador;
+	}
 	
 	public Integer getId() {
 		return id;
@@ -23,7 +28,7 @@ public class Sexo implements Comparable<Sexo> {
 	public void setId(Integer id) {
 		this.id = id;
 	}
-
+	
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
@@ -53,13 +58,6 @@ public class Sexo implements Comparable<Sexo> {
 
 	@Override
 	public int compareTo(Sexo sexo) {
-//		int id = sexo.id;
-//		if (this.id < id) {
-//			return +1;
-//		} else if (this.id > id) {
-//			return -1;
-//		}
-//		return 0;
 		return this.nome.compareTo(sexo.nome);
 	}
 	
