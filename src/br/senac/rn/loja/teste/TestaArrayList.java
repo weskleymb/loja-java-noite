@@ -7,7 +7,7 @@ public class TestaArrayList {
 	public static void main(String[] args) {
 
 		SexoDAO dao = new SexoDAO();
-		System.out.println(dao.buscaPorId(1));
+		System.out.println(dao.buscaTodos());
 				
 	}
 
