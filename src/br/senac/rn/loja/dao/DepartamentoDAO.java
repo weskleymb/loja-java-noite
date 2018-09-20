@@ -5,9 +5,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-
 import br.senac.rn.loja.model.Departamento;
-import br.senac.rn.loja.model.Sexo;
 
 public class DepartamentoDAO {
 
