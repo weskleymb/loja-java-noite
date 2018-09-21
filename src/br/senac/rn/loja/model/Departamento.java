@@ -68,5 +68,12 @@ public class Departamento implements Comparable<Departamento> {
 	public int compareTo(Departamento departamento) {
 		return id.compareTo(departamento.id);
 	}
+
+	@Override
+	public String toString() {
+		return "Departamento [id=" + id + ", nome=" + nome + ", sigla=" + sigla + ", desconto=" + desconto + "]";
+	}
+	
+	
 	
 }

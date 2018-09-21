@@ -7,6 +7,10 @@ public class Produto implements Comparable<Produto> {
 	private Float preco;
 	private Departamento departamento;
 	
+	public Produto() {
+		departamento = new Departamento();
+	}
+	
 	public Integer getId() {
 		return id;
 	}
@@ -67,6 +71,11 @@ public class Produto implements Comparable<Produto> {
 	@Override
 	public int compareTo(Produto produto) {
 		return id.compareTo(produto.id);
+	}
+
+	@Override
+	public String toString() {
+		return "Produto [id=" + id + ", nome=" + nome + ", preco=" + preco + ", departamento=" + departamento + "]";
 	}
 	
 }

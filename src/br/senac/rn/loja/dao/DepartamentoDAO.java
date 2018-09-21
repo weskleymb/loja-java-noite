@@ -81,7 +81,7 @@ public class DepartamentoDAO {
 				departamento.setId(result.getInt("dep_id"));
 				departamento.setNome(result.getString("dep_nome"));
 				departamento.setSigla(result.getString("dep_sigla"));
-				departamento.setDesconto(result.getFloat("dep_sigla"));				
+				departamento.setDesconto(result.getFloat("dep_desconto"));				
 			}
 			db.fechaConexao();
 			return departamento;
